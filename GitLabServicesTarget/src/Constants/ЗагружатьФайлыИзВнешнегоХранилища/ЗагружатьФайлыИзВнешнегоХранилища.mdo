@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d9b30bf3-f947-4260-b267-8202462ed7cd">
+  <producedTypes>
+    <managerType typeId="72cd770a-d059-4a37-9fac-ba6e243a66b3" valueTypeId="b5e2821a-2bd6-4256-be2f-f93e5c2f210e"/>
+    <valueManagerType typeId="245f9884-30d1-4e4d-a8ff-607b62c7ba2b" valueTypeId="a24abbb8-e5b6-4ab5-b318-283583973090"/>
+  </producedTypes>
+  <name>ЗагружатьФайлыИзВнешнегоХранилища</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загружать файлы из внешнего хранилища</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

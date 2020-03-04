@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="405aec64-f075-4730-bcb5-c1f37253c4a1">
+  <name>Test</name>
+  <synonym>
+    <key>ru</key>
+    <value>Test</value>
+  </synonym>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:ConfigurationExtension">
+    <defaultRunMode>Checked</defaultRunMode>
+    <usePurposes>Checked</usePurposes>
+    <commandInterface>Extended</commandInterface>
+    <mainSectionCommandInterface>Extended</mainSectionCommandInterface>
+    <defaultLanguage>Checked</defaultLanguage>
+    <modalityUseMode>Checked</modalityUseMode>
+    <interfaceCompatibilityMode>Checked</interfaceCompatibilityMode>
+    <compatibilityMode>Checked</compatibilityMode>
+    <defaultStyle>Extended</defaultStyle>
+  </extension>
+  <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="cecfa797-4f28-43d3-a26d-568d499cfa6c"/>
+  <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="4e1f4da7-dc12-45f6-b4e1-abdc0a14d43b"/>
+  <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="c8661d2c-353a-4273-a1b2-9eda825d507d"/>
+  <containedObjects classId="9de14907-ec23-4a07-96f0-85521cb6b53b" objectId="79d3451d-c7e6-4044-8a63-2a85661af976"/>
+  <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="1c71f0fc-1fb0-48c7-9760-989c4cb44365"/>
+  <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="0dde49c8-25c4-4b68-a1bc-e7d9d12535f9"/>
+  <namePrefix>Тест_</namePrefix>
+  <configurationExtensionCompatibilityMode>8.3.10</configurationExtensionCompatibilityMode>
+  <configurationExtensionPurpose>Customization</configurationExtensionPurpose>
+  <defaultRunMode>OrdinaryApplication</defaultRunMode>
+  <usePurposes>PersonalComputer</usePurposes>
+  <scriptVariant>Russian</scriptVariant>
+  <vendor>Фирма &quot;1С&quot;</vendor>
+  <version>10.3.5.77</version>
+  <updateCatalogAddress>http://downloads.v8.1c.ru/tmplts/</updateCatalogAddress>
+  <includeHelpInContents>true</includeHelpInContents>
+  <useManagedFormInOrdinaryApplication>true</useManagedFormInOrdinaryApplication>
+  <defaultLanguage>Language.Русский</defaultLanguage>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
+  <interfaceCompatibilityMode>Version8_2</interfaceCompatibilityMode>
+  <compatibilityMode>8.3.10</compatibilityMode>
+  <languages uuid="fb383d09-2678-4577-b316-bd5591d17d98">
+    <name>Русский</name>
+    <synonym>
+      <key>ru</key>
+      <value>Русский</value>
+    </synonym>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:LanguageExtension">
+      <languageCode>Checked</languageCode>
+    </extension>
+    <languageCode>ru</languageCode>
+  </languages>
+  <commonModules>CommonModule.Тест_HTTPServiceGitlabКлиент</commonModules>
+  <commonModules>CommonModule.Тест_ВнешниеОтчетыИОбработкиСервер</commonModules>
+  <commonModules>CommonModule.Тест_HTTPServiceGitlabВызовСервера</commonModules>
+</mdclass:Configuration>

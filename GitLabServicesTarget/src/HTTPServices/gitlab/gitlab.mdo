@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9c9254e0-8f88-4842-a2f3-7a1d8fc298b5">
+  <name>gitlab</name>
+  <synonym>
+    <key>ru</key>
+    <value>gitlab services</value>
+  </synonym>
+  <rootURL>gitlab</rootURL>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="94220ba7-437d-4875-885f-8444a50e3bb8">
+    <name>version</name>
+    <synonym>
+      <key>ru</key>
+      <value>Версия конфигурации</value>
+    </synonym>
+    <template>/version</template>
+    <methods uuid="5a483fe5-79c6-43e7-ba13-527277b5c722">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>VersionGET</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="78126d2b-ff15-4029-ab0c-ee64c4bcba0c">
+    <name>update</name>
+    <synonym>
+      <key>ru</key>
+      <value>update</value>
+    </synonym>
+    <template>/update</template>
+    <methods uuid="04de60dd-5afb-47cd-9ae0-2097a87ea15b">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>UpdatePOST</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

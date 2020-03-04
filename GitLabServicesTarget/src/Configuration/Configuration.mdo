@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Configuration xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1e4190e9-76c2-456e-a607-4d817110ffd9">
+  <name>УправлениеТорговлей</name>
+  <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="6b021b70-482d-4baf-b590-b86b68d4730e"/>
+  <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="105fa7a7-9081-44ca-b717-223d5eed9f2d"/>
+  <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="a09e8ee4-69c6-4f96-bd18-030e827001bf"/>
+  <containedObjects classId="9de14907-ec23-4a07-96f0-85521cb6b53b" objectId="baf5b3c9-3fbc-4aa2-a581-5756ba794e53"/>
+  <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="ce9bb045-c725-4c3a-b06c-2221c27a4111"/>
+  <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="c4c55e3a-68e2-4afd-b65b-a746e479ed13"/>
+  <configurationExtensionCompatibilityMode>8.3.10</configurationExtensionCompatibilityMode>
+  <defaultRunMode>OrdinaryApplication</defaultRunMode>
+  <usePurposes>PersonalComputer</usePurposes>
+  <scriptVariant>Russian</scriptVariant>
+  <version>10.3.5.77</version>
+  <defaultLanguage>Language.Русский</defaultLanguage>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
+  <interfaceCompatibilityMode>Version8_2</interfaceCompatibilityMode>
+  <compatibilityMode>8.3.10</compatibilityMode>
+  <languages uuid="31e2aa98-4a9c-4d99-a3e7-540a13396b8c">
+    <name>Русский</name>
+    <synonym>
+      <key>ru</key>
+      <value>Русский</value>
+    </synonym>
+    <languageCode>ru</languageCode>
+  </languages>
+  <subsystems>Subsystem.ВнешниеОтчетыИОбработки</subsystems>
+  <commonModules>CommonModule.ВнешниеОтчетыИОбработкиСервер</commonModules>
+  <commonModules>CommonModule.КодОтветаHTTP</commonModules>
+  <commonModules>CommonModule.КодОтветаHTTPПовтИсп</commonModules>
+  <commonModules>CommonModule.КодОтветаHTTPСервер</commonModules>
+  <commonModules>CommonModule.ОбщегоНазначения</commonModules>
+  <commonModules>CommonModule.ОбщегоНазначенияКлиентСервер</commonModules>
+  <commonModules>CommonModule.СтроковыеФункцииКлиентСервер</commonModules>
+  <httpServices>HTTPService.gitlab</httpServices>
+  <functionalOptions>FunctionalOption.ЗагружатьФайлыИзВнешнегоХранилища</functionalOptions>
+  <constants>Constant.AccessTokenВнешнееХранилищеОтчетовИОбработок</constants>
+  <constants>Constant.ЗагружатьФайлыИзВнешнегоХранилища</constants>
+  <catalogs>Catalog.ВнешниеОбработки</catalogs>
+  <enums>Enum.ВидыДополнительныхВнешнихОбработок</enums>
+</mdclass:Configuration>

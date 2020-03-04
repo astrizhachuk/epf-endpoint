@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="eb896499-c82e-460b-8dcc-30afdfe211d3">
+  <producedTypes>
+    <refType typeId="7c4d89db-b8b8-4abe-98bd-d3533e60376c" valueTypeId="5b01df2f-63b3-4f2d-82e3-b77bb4e32165"/>
+    <listType typeId="ab6b0d24-40aa-406d-b966-30e34af42daa" valueTypeId="832c890b-0839-4cab-a67f-422e03c31b7e"/>
+    <managerType typeId="157214db-44a3-4e1b-a7f1-728b546b0c6a" valueTypeId="eb212788-fc27-4d59-93a7-fb6baa4fccf7"/>
+  </producedTypes>
+  <name>ВидыДополнительныхВнешнихОбработок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды дополнительных внешних обработок</value>
+  </synonym>
+  <standardAttributes>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="b0f80827-c4f6-4dc5-8337-790bba2573f2">
+    <name>ПечатнаяФорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Печатная форма</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d5b7f602-a9b3-46ec-96ae-c23c282d61dc">
+    <name>ЗаполнениеТабличныхЧастей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заполнение табличных частей</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="0561fea2-0d9c-49bc-8376-f7d59252d5dd">
+    <name>Обработка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обработка</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="68fdfa6a-43d9-48e8-8e86-731837e0afa0">
+    <name>Отчет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет</value>
+    </synonym>
+    <comment>Внешний отчет</comment>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ed27593f-8a10-448c-9c3d-59e072d1144f">
+  <name>ВнешниеОтчетыИОбработки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Внешние отчеты и обработки</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>Constant.ЗагружатьФайлыИзВнешнегоХранилища</content>
+  <content>FunctionalOption.ЗагружатьФайлыИзВнешнегоХранилища</content>
+  <content>CommonModule.ВнешниеОтчетыИОбработкиСервер</content>
+  <content>Constant.AccessTokenВнешнееХранилищеОтчетовИОбработок</content>
+  <content>HTTPService.gitlab</content>
+  <content>Catalog.ВнешниеОбработки</content>
+</mdclass:Subsystem>
