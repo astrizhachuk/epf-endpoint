@@ -41,4 +41,21 @@
       <handler>UpdatePOST</handler>
     </methods>
   </urlTemplates>
+  <urlTemplates uuid="0a5bb309-8e37-411c-8c98-c222318faa66">
+    <name>switch</name>
+    <synonym>
+      <key>ru</key>
+      <value>switch</value>
+    </synonym>
+    <template>/switch</template>
+    <methods uuid="404c22a5-8969-45ee-a802-64a3ee053c16">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>switchPOST</handler>
+    </methods>
+  </urlTemplates>
 </mdclass:HTTPService>

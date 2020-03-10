@@ -12,22 +12,22 @@
 	И я выполняю код встроенного языка
 	| 'Тест_HTTPServiceGitlabКлиент.Тест_HTTPServiceGitlabResponseVersion(Контекст());' |
 
-Сценарий: Тест_HTTPServiceGitlabКлиент (клиент): Тест_HTTPServiceGitlabUpdateError423
+Сценарий: Тест_HTTPServiceGitlabКлиент (клиент): Тест_HTTPServiceGitlabError423
 	И я выполняю код встроенного языка
-	| 'Тест_HTTPServiceGitlabКлиент.Тест_HTTPServiceGitlabUpdateError423(Контекст());' |
+	| 'Тест_HTTPServiceGitlabКлиент.Тест_HTTPServiceGitlabError423(Контекст());' |
 
-Сценарий: Тест_HTTPServiceGitlabКлиент (клиент): Тест_HTTPServiceGitlabUpdateError403
+Сценарий: Тест_HTTPServiceGitlabКлиент (клиент): Тест_HTTPServiceGitlabError403
 	И я выполняю код встроенного языка
-	| 'Тест_HTTPServiceGitlabКлиент.Тест_HTTPServiceGitlabUpdateError403(Контекст());' |
+	| 'Тест_HTTPServiceGitlabКлиент.Тест_HTTPServiceGitlabError403(Контекст());' |
 
-Сценарий: Тест_HTTPServiceGitlabКлиент (клиент): Тест_HTTPServiceGitlabUpdateError401
+Сценарий: Тест_HTTPServiceGitlabКлиент (клиент): Тест_HTTPServiceGitlabError401
 	И я выполняю код встроенного языка
-	| 'Тест_HTTPServiceGitlabКлиент.Тест_HTTPServiceGitlabUpdateError401(Контекст());' |
+	| 'Тест_HTTPServiceGitlabКлиент.Тест_HTTPServiceGitlabError401(Контекст());' |
 
-Сценарий: Тест_HTTPServiceGitlabКлиент (клиент): Тест_HTTPServiceGitlabUpdateError400
+Сценарий: Тест_HTTPServiceGitlabКлиент (клиент): Тест_HTTPServiceGitlabError400
 	И я выполняю код встроенного языка
-	| 'Тест_HTTPServiceGitlabКлиент.Тест_HTTPServiceGitlabUpdateError400(Контекст());' |
+	| 'Тест_HTTPServiceGitlabКлиент.Тест_HTTPServiceGitlabError400(Контекст());' |
 
-Сценарий: Тест_HTTPServiceGitlabКлиент (клиент): Тест_HTTPServiceGitlabUpdate200
+Сценарий: Тест_HTTPServiceGitlabКлиент (клиент): Тест_HTTPServiceGitlab200
 	И я выполняю код встроенного языка
-	| 'Тест_HTTPServiceGitlabКлиент.Тест_HTTPServiceGitlabUpdate200(Контекст());' |
+	| 'Тест_HTTPServiceGitlabКлиент.Тест_HTTPServiceGitlab200(Контекст());' |
