@@ -3,7 +3,7 @@
         {
             "user": "a.strizhachuk",
             "settings": {
-                "СерверСервисаGitLab": "spbcoit58.stdp.ru",
+                "СерверСервисаGitLab": "localhost",
                 "ПутьДоСервисаGitLab": "/target/hs/gitlab"
             }
         }
