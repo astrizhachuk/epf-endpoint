@@ -12,4 +12,5 @@
   <content>Constant.AccessTokenВнешнееХранилищеОтчетовИОбработок</content>
   <content>HTTPService.gitlab</content>
   <content>Catalog.ВнешниеОбработки</content>
+  <content>Role.gitlab</content>
 </mdclass:Subsystem>
