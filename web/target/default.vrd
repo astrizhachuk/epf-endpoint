@@ -3,8 +3,8 @@
 		xmlns:xs="http://www.w3.org/2001/XMLSchema" 
 		xmlns:core="http://v8.1c.ru/8.1/data/core" 
 		base="/target" 
-		ib="Srvr=&quot;localhost&quot;;Ref=&quot;gitlabServicesTarget&quot;;" 
-		enable="true" 
+		ib="Srvr=&quot;localhost&quot;;Ref=&quot;gitlabServicesTarget&quot;;usr=&quot;gitlab&quot;;pwd=&quot;gitlab&quot;" 
+		enable="false" 
 		enableStandardOData="true" 
 		temp="C:\w\1c\tmp">
 	<debug enable="true" 

@@ -26,6 +26,8 @@
     <languageCode>ru</languageCode>
   </languages>
   <subsystems>Subsystem.ВнешниеОтчетыИОбработки</subsystems>
+  <roles>Role.ПолныеПрава</roles>
+  <roles>Role.gitlab</roles>
   <commonModules>CommonModule.ВнешниеОтчетыИОбработкиСервер</commonModules>
   <commonModules>CommonModule.КодОтветаHTTP</commonModules>
   <commonModules>CommonModule.КодОтветаHTTPПовтИсп</commonModules>
