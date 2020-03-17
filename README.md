@@ -4,7 +4,7 @@
 
 Пример реализации HTTP-сервиса обновления внешний отчетов и обработок на конечной базе-получателе (глубоко модифицированная УТ 10.3).
 
-[Описание API](https://app.swaggerhub.com/apis-docs/astrizhachuk/epf/1.0.0)
+[Описание API](https://app.swaggerhub.com/apis/astrizhachuk/receiver/1.0.0)
 
 ## Инструменты
 
