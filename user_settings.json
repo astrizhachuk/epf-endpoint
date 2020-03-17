@@ -4,7 +4,7 @@
             "user": "a.strizhachuk",
             "settings": {
                 "СерверСервисаGitLab": "localhost",
-                "ПутьДоСервисаGitLab": "/target/hs/gitlab"
+                "ПутьДоСервисаGitLab": "/receiver/hs/gitlab"
             }
         }
     ]
