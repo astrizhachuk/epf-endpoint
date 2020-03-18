@@ -12,8 +12,9 @@
     <name>version</name>
     <synonym>
       <key>ru</key>
-      <value>Версия конфигурации</value>
+      <value>version</value>
     </synonym>
+    <comment>Версия конфигурации</comment>
     <template>/version</template>
     <methods uuid="5a483fe5-79c6-43e7-ba13-527277b5c722">
       <name>GET</name>
@@ -30,6 +31,7 @@
       <key>ru</key>
       <value>update</value>
     </synonym>
+    <comment>Обновить файл</comment>
     <template>/update</template>
     <methods uuid="04de60dd-5afb-47cd-9ae0-2097a87ea15b">
       <name>POST</name>
@@ -47,6 +49,7 @@
       <key>ru</key>
       <value>switch</value>
     </synonym>
+    <comment>Включение/отключение загрузки из внешних хранилищ</comment>
     <template>/switch</template>
     <methods uuid="404c22a5-8969-45ee-a802-64a3ee053c16">
       <name>POST</name>

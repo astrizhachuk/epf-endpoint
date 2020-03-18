@@ -1,3 +1,5 @@
+// BSLLS-выкл.
+
 // КодОтветаHTTP: Работа с кодами ответов HTTP для 1С:Предприятие 8
 //
 // Copyright 2019 Alexander Strizhachuk
