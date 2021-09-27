@@ -51,7 +51,7 @@
     </extension>
     <languageCode>ru</languageCode>
   </languages>
-  <commonModules>CommonModule.Тест_HTTPServiceGitlabКлиент</commonModules>
-  <commonModules>CommonModule.Тест_ВнешниеОтчетыИОбработкиСервер</commonModules>
-  <commonModules>CommonModule.Тест_HTTPServiceGitlabВызовСервера</commonModules>
+  <commonModules>CommonModule.ТестыHTTPСервисыСервер</commonModules>
+  <commonModules>CommonModule.ТестыВнешниеОтчетыИОбработкиСервер</commonModules>
+  <commonModules>CommonModule.HTTPConnector</commonModules>
 </mdclass:Configuration>

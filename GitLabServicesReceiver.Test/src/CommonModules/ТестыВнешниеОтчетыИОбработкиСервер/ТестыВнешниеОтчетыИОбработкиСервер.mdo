@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="92d68a5c-a04d-4295-92c4-38029a330bbc">
-  <name>Тест_ВнешниеОтчетыИОбработкиСервер</name>
-  <synonym>
-    <key>ru</key>
-    <value>Внешние отчеты и обработки сервер</value>
-  </synonym>
+  <name>ТестыВнешниеОтчетыИОбработкиСервер</name>
   <server>true</server>
 </mdclass:CommonModule>

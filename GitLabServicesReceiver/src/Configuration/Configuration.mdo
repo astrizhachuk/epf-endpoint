@@ -29,12 +29,10 @@
   <roles>Role.ПолныеПрава</roles>
   <roles>Role.gitlab</roles>
   <commonModules>CommonModule.ВнешниеОтчетыИОбработкиСервер</commonModules>
-  <commonModules>CommonModule.КодОтветаHTTP</commonModules>
-  <commonModules>CommonModule.КодОтветаHTTPПовтИсп</commonModules>
-  <commonModules>CommonModule.КодОтветаHTTPСервер</commonModules>
   <commonModules>CommonModule.ОбщегоНазначения</commonModules>
   <commonModules>CommonModule.ОбщегоНазначенияКлиентСервер</commonModules>
   <commonModules>CommonModule.СтроковыеФункцииКлиентСервер</commonModules>
+  <commonModules>CommonModule.КодыСостоянияHTTPКлиентСерверПовтИсп</commonModules>
   <httpServices>HTTPService.gitlab</httpServices>
   <functionalOptions>FunctionalOption.ЗагружатьФайлыИзВнешнегоХранилища</functionalOptions>
   <constants>Constant.AccessTokenВнешнееХранилищеОтчетовИОбработок</constants>
