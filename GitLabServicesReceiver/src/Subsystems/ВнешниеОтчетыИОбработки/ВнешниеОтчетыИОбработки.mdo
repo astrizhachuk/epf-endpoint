@@ -7,7 +7,6 @@
   </synonym>
   <includeHelpInContents>true</includeHelpInContents>
   <content>Constant.ЗагружатьФайлыИзВнешнегоХранилища</content>
-  <content>FunctionalOption.ЗагружатьФайлыИзВнешнегоХранилища</content>
   <content>CommonModule.ВнешниеОтчетыИОбработкиСервер</content>
   <content>Constant.AccessTokenВнешнееХранилищеОтчетовИОбработок</content>
   <content>HTTPService.gitlab</content>

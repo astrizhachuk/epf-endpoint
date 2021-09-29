@@ -34,7 +34,6 @@
   <commonModules>CommonModule.СтроковыеФункцииКлиентСервер</commonModules>
   <commonModules>CommonModule.КодыСостоянияHTTPКлиентСерверПовтИсп</commonModules>
   <httpServices>HTTPService.gitlab</httpServices>
-  <functionalOptions>FunctionalOption.ЗагружатьФайлыИзВнешнегоХранилища</functionalOptions>
   <constants>Constant.AccessTokenВнешнееХранилищеОтчетовИОбработок</constants>
   <constants>Constant.ЗагружатьФайлыИзВнешнегоХранилища</constants>
   <catalogs>Catalog.ВнешниеОбработки</catalogs>
