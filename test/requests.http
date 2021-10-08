@@ -1,4 +1,4 @@
-GET  http://localhost/test/hs/epf/infobase
+GET  http://localhost/test/hs/infobase
 
 ###
 # bad headers

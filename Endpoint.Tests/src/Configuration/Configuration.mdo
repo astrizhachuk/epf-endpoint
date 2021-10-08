@@ -29,8 +29,8 @@
   <defaultRunMode>OrdinaryApplication</defaultRunMode>
   <usePurposes>PersonalComputer</usePurposes>
   <scriptVariant>Russian</scriptVariant>
-  <vendor>Фирма &quot;1С&quot;</vendor>
-  <version>10.3.5.77</version>
+  <vendor></vendor>
+  <version>0.0.1</version>
   <updateCatalogAddress>http://downloads.v8.1c.ru/tmplts/</updateCatalogAddress>
   <includeHelpInContents>true</includeHelpInContents>
   <useManagedFormInOrdinaryApplication>true</useManagedFormInOrdinaryApplication>

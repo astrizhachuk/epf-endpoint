@@ -1,31 +1,36 @@
 openapi: 3.0.1
 info:
-  title: Внешние отчеты и обработки (receiver)
-  description: 'Управление внешними отчетами и обработками через HTTP сервис (REST). Receiver.'
+  title: Внешние отчеты и обработки (endpoint)
+  description: 'Управление внешними отчетами и обработками через HTTP сервис (REST).'
   contact:
     email: a.strizhachuk@yandex.ru
-  version: 1.0.0
+  version: 2.0.0
 servers:
-- url: http://localhost/receiver/hs/epf
-  description: Develop
+- url: http://localhost/test/hs
+  description: develop
 paths:
-  /version:
+  /infobase:
     get:
-      summary: Версия конфигурации
-      operationId: version
+      summary: Сведения об информационной базе
+      operationId: infobase
       responses:
         200:
-          description: Версия конфигурации
+          description: Сведения об информационной базе
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/response'
+                type: object
+                properties:
+                  config_version:
+                    type: string
+                  connection_string:
+                    type: string
               examples:
                 foo:
-                  summary: Версия конфигурации
+                  summary: Сведения об информационной базе
                   value: {
-                    "type": "info",
-                    "message": "10.3.6.98"
+                    "config_version": "1.0.0",
+                    "connection_string": "File=\"\/1c\/db\/epf-endpoint\";"
                   }
   /switch:
     post:
