@@ -1,0 +1,186 @@
+openapi: 3.0.3
+info:
+  title: Внешние обработки (endpoint)
+  description: 'Управление внешними отчетами и обработками через HTTP сервис (REST).'
+  contact:
+    email: a.strizhachuk@yandex.ru
+  version: 2.0.0
+servers:
+- url: http://localhost/test/hs
+  description: develop
+paths:
+  /infobase:
+    get:
+      summary: Сведения об информационной базе
+      operationId: infobase
+      responses:
+        200:
+          description: Текущие сведения
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  config_version:
+                    type: string
+                  connection_string:
+                    type: string
+              examples:
+                foo:
+                  summary: Текущие сведения
+                  value: {
+                    "config_version": "1.0.0",
+                    "connection_string": "File=\"\/1c\/db\/epf-endpoint\";"
+                  }
+  /epf/switch:
+    post:
+      summary: Управление функционалом загрузки внешней обработки
+      operationId: switch
+      parameters:
+      - name: value
+        in: header
+        description: on - включить, off - отключить
+        required: true
+        schema:
+          type: string
+          enum:
+            - on
+            - off
+      requestBody:
+        content: {}
+        required: false
+      responses:
+        200:
+          description: Результат операции
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+              examples:
+                enabled:
+                  summary: Включено
+                  value: {
+                    "message": "загрузка файлов включена"
+                  }
+                disabled:
+                  summary: Отключено
+                  value: {
+                    "message": "загрузка файлов отключена"
+                  }
+        400:
+          description: Ошибочный запрос
+        401:
+          description: Не авторизован
+        403:
+          description: Доступ закрыт
+      security:
+      - access_token_receiver: []
+  /epf/upload:
+    post:
+      summary: Загрузить внешнюю обработку
+      operationId: upload
+      parameters:
+      - name: name
+        in: header
+        description: Полное имя файла (с расширением)
+        required: true
+        schema:
+          type: string
+      requestBody:
+        description: Внешний отчет или обработка в двоичном формате
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: string
+              format: binary
+        required: true
+      responses:
+        200:
+          description: Результат обновления
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  filename:
+                    type: string
+                  uploaded:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/element'
+                  errors:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/element'
+              examples:
+                uploaded:
+                  summary: Обработки загружены
+                  value: {
+                    "filename": "Тест.epf",
+                    "uploaded": [
+                      {
+                        "ref": "1227be9e-2824-11ec-a4c9-dcfb4832a874",
+                        "line": 0
+                        },
+                        "ref": "1227be9e-2824-11ec-a4c9-dcfb4832a874",
+                        "line": 1                        
+                    ],
+                    "errors": [],
+                    "message": "внешние обработки загружены успешно"
+                  }
+                not found:
+                  summary: Не найдено куда загрузить обработку
+                  value: {
+                    "filename": "Тест.epf",
+                    "uploaded": [],
+                    "errors": [],
+                    "message": "внешние обработки не найдены"
+                  }
+                has error:
+                  summary: При загрузке были ошибки
+                  value: {
+                    "filename": "Тест.epf",
+                    "uploaded": [
+                      {
+                        "ref": "1227be9e-2824-11ec-a4c9-dcfb4832a874",
+                        "line": 0
+                        }
+                    ],
+                    "errors": [
+                        {
+                          "ref": "1227be9e-2824-11ec-a4c9-dcfb4832a874",
+                          "line": 1,
+                          "message": "тут полное представление ошибки из 1с"
+                        }
+                    ],
+                    "message": "внешние обработки загружены успешно"
+                  }
+        400:
+          description: Ошибочный запрос
+        401:
+          description: Не авторизован
+        403:
+          description: Доступ закрыт
+        423:
+          description: Функционал отключен
+      security:
+      - access_token_receiver: []
+components:
+  schemas:
+    element:
+      type: object
+      properties:
+        ref:
+          type: string
+        line:
+          type: integer
+        message:
+          type: string
+  securitySchemes:
+    access_token_receiver:
+      type: apiKey
+      name: token
+      in: header
