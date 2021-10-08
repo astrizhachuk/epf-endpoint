@@ -10,7 +10,7 @@
 
 * Разработка ведется в [EDT](https://releases.1c.ru/project/DevelopmentTools10). Проект создан по [bootstrap-1c](https://github.com/astrizhachuk/bootstrap-1c);
 * Платформа 1С не ниже 8.3.10.2667.
-* Модульные тесты EDT [1CUnits](https://github.com/DoublesunRUS/ru.capralow.dt.unit.launcher) - в расширении, см. [./GitLabServicesReceiver.Test](./GitLabServicesReceiver.Test)
+* Модульные тесты EDT [1CUnits](https://github.com/DoublesunRUS/ru.capralow.dt.unit.launcher) - в расширении, см. [./Endpoint.Tests](./Endpoint.Tests)
 
 ## Внедрение
 

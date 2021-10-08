@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="405aec64-f075-4730-bcb5-c1f37253c4a1">
-  <name>Test</name>
+  <name>Tests</name>
   <synonym>
     <key>ru</key>
-    <value>Test</value>
+    <value>Tests</value>
   </synonym>
   <objectBelonging>Adopted</objectBelonging>
   <extension xsi:type="mdclassExtension:ConfigurationExtension">
@@ -23,7 +23,7 @@
   <containedObjects classId="9de14907-ec23-4a07-96f0-85521cb6b53b" objectId="79d3451d-c7e6-4044-8a63-2a85661af976"/>
   <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="1c71f0fc-1fb0-48c7-9760-989c4cb44365"/>
   <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="0dde49c8-25c4-4b68-a1bc-e7d9d12535f9"/>
-  <namePrefix>Тест_</namePrefix>
+  <namePrefix>Тесты_</namePrefix>
   <configurationExtensionCompatibilityMode>8.3.10</configurationExtensionCompatibilityMode>
   <configurationExtensionPurpose>Customization</configurationExtensionPurpose>
   <defaultRunMode>OrdinaryApplication</defaultRunMode>
