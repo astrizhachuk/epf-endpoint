@@ -7,9 +7,9 @@
   </synonym>
   <includeHelpInContents>true</includeHelpInContents>
   <content>Constant.ЗагружатьФайлыИзВнешнегоХранилища</content>
-  <content>CommonModule.ВнешниеОтчетыИОбработкиСервер</content>
-  <content>Constant.AccessTokenВнешнееХранилищеОтчетовИОбработок</content>
-  <content>HTTPService.gitlab</content>
+  <content>CommonModule.ВнешниеОтчетыИОбработки</content>
+  <content>Constant.ТокенДоступаЗагрузкиФайловИзВнешнегоХранилища</content>
+  <content>HTTPService.ExternalDataProcessors</content>
   <content>Catalog.ВнешниеОбработки</content>
-  <content>Role.gitlab</content>
+  <content>Role.ЗагрузкаВнешнихОбработок</content>
 </mdclass:Subsystem>

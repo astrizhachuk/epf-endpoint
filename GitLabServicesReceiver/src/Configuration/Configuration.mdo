@@ -27,14 +27,14 @@
   </languages>
   <subsystems>Subsystem.ВнешниеОтчетыИОбработки</subsystems>
   <roles>Role.ПолныеПрава</roles>
-  <roles>Role.gitlab</roles>
-  <commonModules>CommonModule.ВнешниеОтчетыИОбработкиСервер</commonModules>
-  <commonModules>CommonModule.ОбщегоНазначения</commonModules>
-  <commonModules>CommonModule.ОбщегоНазначенияКлиентСервер</commonModules>
-  <commonModules>CommonModule.СтроковыеФункцииКлиентСервер</commonModules>
+  <roles>Role.ЗагрузкаВнешнихОбработок</roles>
+  <commonModules>CommonModule.ВнешниеОтчетыИОбработки</commonModules>
+  <commonModules>CommonModule.ВнешниеОтчетыИОбработкиКлиентСервер</commonModules>
   <commonModules>CommonModule.КодыСостоянияHTTPКлиентСерверПовтИсп</commonModules>
-  <httpServices>HTTPService.gitlab</httpServices>
-  <constants>Constant.AccessTokenВнешнееХранилищеОтчетовИОбработок</constants>
+  <commonModules>CommonModule.ОбщегоНазначения</commonModules>
+  <httpServices>HTTPService.ExternalDataProcessors</httpServices>
+  <httpServices>HTTPService.Infobase</httpServices>
+  <constants>Constant.ТокенДоступаЗагрузкиФайловИзВнешнегоХранилища</constants>
   <constants>Constant.ЗагружатьФайлыИзВнешнегоХранилища</constants>
   <catalogs>Catalog.ВнешниеОбработки</catalogs>
   <enums>Enum.ВидыДополнительныхВнешнихОбработок</enums>

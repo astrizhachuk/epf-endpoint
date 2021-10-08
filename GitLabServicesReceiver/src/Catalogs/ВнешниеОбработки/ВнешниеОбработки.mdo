@@ -99,9 +99,6 @@
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
-  <defaultObjectForm>Catalog.ВнешниеОбработки.Form.ФормаЭлемента</defaultObjectForm>
-  <defaultFolderForm>Catalog.ВнешниеОбработки.Form.ФормаГруппы</defaultFolderForm>
-  <defaultListForm>Catalog.ВнешниеОбработки.Form.ФормаСписка</defaultListForm>
   <attributes uuid="0ab73613-8b64-4170-88d0-d27d0ad591de">
     <name>ХранилищеВнешнейОбработки</name>
     <synonym>
@@ -176,6 +173,20 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="309a19ba-3763-41aa-bc28-fe067567b46b">
+    <name>ИмяФайла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя файла</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>260</length>
+      </stringQualifiers>
+    </type>
     <fullTextSearch>Use</fullTextSearch>
   </attributes>
   <tabularSections uuid="f165107e-0b6a-44b0-b33d-ebbe25a29e58">
@@ -370,35 +381,17 @@
       <maxValue xsi:type="core:UndefinedValue"/>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
+    <attributes uuid="d03c7af8-53bf-446b-9323-f79f68e81a30">
+      <name>КомментарийКФайлуИсточнику</name>
+      <synonym>
+        <key>ru</key>
+        <value>Комментарий к файлу источнику</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
   </tabularSections>
-  <forms uuid="64b4060c-80ca-47b3-a00b-a9111bce7c51">
-    <name>ФормаЭлемента</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма элемента</value>
-    </synonym>
-    <formType>Ordinary</formType>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="115291f2-5db2-466c-815f-e3ac4bd530b6">
-    <name>ФормаСписка</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма списка</value>
-    </synonym>
-    <formType>Ordinary</formType>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="ad1fa5cf-f9ce-4abe-bc34-65c58d84e2c5">
-    <name>ФормаГруппы</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма группы</value>
-    </synonym>
-    <formType>Ordinary</formType>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
 </mdclass:Catalog>

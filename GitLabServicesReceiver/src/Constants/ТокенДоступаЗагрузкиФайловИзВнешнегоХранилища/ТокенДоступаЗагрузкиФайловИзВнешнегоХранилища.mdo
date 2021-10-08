@@ -4,10 +4,10 @@
     <managerType typeId="9d994815-16ac-4bf9-b90b-aee0fb1925db" valueTypeId="2075bb8f-64d4-41c7-bc83-191ad535ee19"/>
     <valueManagerType typeId="01cc5683-f7cb-49dd-9d88-2e758c17461d" valueTypeId="653b4fab-4d72-4eec-b2be-b98ad76c94dc"/>
   </producedTypes>
-  <name>AccessTokenВнешнееХранилищеОтчетовИОбработок</name>
+  <name>ТокенДоступаЗагрузкиФайловИзВнешнегоХранилища</name>
   <synonym>
     <key>ru</key>
-    <value>Access Token внешнее хранилище отчетов и обработок</value>
+    <value>Токен доступа загрузки файлов из внешнего хранилища</value>
   </synonym>
   <type>
     <types>String</types>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e6c782ad-41d3-4c8e-8ce1-17b1ebbbc40e">
+  <name>Infobase</name>
+  <synonym>
+    <key>ru</key>
+    <value>Infobase</value>
+  </synonym>
+  <comment>Сведения об информационной базе</comment>
+  <rootURL>infobase</rootURL>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="eb5857cf-960f-460f-b3b8-a6115b11caea">
+    <name>Infobase</name>
+    <synonym>
+      <key>ru</key>
+      <value>Infobase</value>
+    </synonym>
+    <template>/*</template>
+    <methods uuid="c87bc6ad-eba0-4768-9092-fd26e32345df">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>GetInfobase</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

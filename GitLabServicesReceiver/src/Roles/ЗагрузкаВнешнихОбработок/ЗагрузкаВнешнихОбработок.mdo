@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0f33a58a-8922-4075-9489-62ffc4dac26f">
-  <name>gitlab</name>
+  <name>ЗагрузкаВнешнихОбработок</name>
   <synonym>
     <key>ru</key>
-    <value>GitLab-services</value>
+    <value>Загрузка внешних обработок</value>
   </synonym>
 </mdclass:Role>

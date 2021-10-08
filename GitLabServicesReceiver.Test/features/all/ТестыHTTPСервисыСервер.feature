@@ -9,24 +9,29 @@
 	Чтобы я мог гарантировать работоспособность метода
 
 @OnServer
-Сценарий: HttpServiceGetVersion
+Сценарий: HttpServiceGetInfobase
 	И я выполняю код встроенного языка на сервере
-	| 'ТестыHTTPСервисыСервер.HttpServiceGetVersion(Контекст());' |
+	| 'ТестыHTTPСервисыСервер.HttpServiceGetInfobase(Контекст());' |
 
 @OnServer
-Сценарий: HttpServicePostUpdateError400BadRequest
+Сценарий: HttpServicePostUploadError400BadRequest
 	И я выполняю код встроенного языка на сервере
-	| 'ТестыHTTPСервисыСервер.HttpServicePostUpdateError400BadRequest(Контекст());' |
+	| 'ТестыHTTPСервисыСервер.HttpServicePostUploadError400BadRequest(Контекст());' |
 
 @OnServer
-Сценарий: HttpServicePostSwitchError400BadRequest
+Сценарий: HttpServicePostSwitchError400BadRequestEmptyValue
 	И я выполняю код встроенного языка на сервере
-	| 'ТестыHTTPСервисыСервер.HttpServicePostSwitchError400BadRequest(Контекст());' |
+	| 'ТестыHTTPСервисыСервер.HttpServicePostSwitchError400BadRequestEmptyValue(Контекст());' |
 
 @OnServer
-Сценарий: HttpServicePostUpdateError401Unauthorized
+Сценарий: HttpServicePostSwitchError400BadRequestBadValue
 	И я выполняю код встроенного языка на сервере
-	| 'ТестыHTTPСервисыСервер.HttpServicePostUpdateError401Unauthorized(Контекст());' |
+	| 'ТестыHTTPСервисыСервер.HttpServicePostSwitchError400BadRequestBadValue(Контекст());' |
+
+@OnServer
+Сценарий: HttpServicePostUploadError401Unauthorized
+	И я выполняю код встроенного языка на сервере
+	| 'ТестыHTTPСервисыСервер.HttpServicePostUploadError401Unauthorized(Контекст());' |
 
 @OnServer
 Сценарий: HttpServicePostSwitchError401Unauthorized
@@ -34,9 +39,9 @@
 	| 'ТестыHTTPСервисыСервер.HttpServicePostSwitchError401Unauthorized(Контекст());' |
 
 @OnServer
-Сценарий: HttpServicePostUpdateError403Forbidden
+Сценарий: HttpServicePostUploadError403Forbidden
 	И я выполняю код встроенного языка на сервере
-	| 'ТестыHTTPСервисыСервер.HttpServicePostUpdateError403Forbidden(Контекст());' |
+	| 'ТестыHTTPСервисыСервер.HttpServicePostUploadError403Forbidden(Контекст());' |
 
 @OnServer
 Сценарий: HttpServicePostSwitchError403Forbidden
@@ -44,14 +49,14 @@
 	| 'ТестыHTTPСервисыСервер.HttpServicePostSwitchError403Forbidden(Контекст());' |
 
 @OnServer
-Сценарий: HttpServicePostUpdateError423Locked
+Сценарий: HttpServicePostUploadError423Locked
 	И я выполняю код встроенного языка на сервере
-	| 'ТестыHTTPСервисыСервер.HttpServicePostUpdateError423Locked(Контекст());' |
+	| 'ТестыHTTPСервисыСервер.HttpServicePostUploadError423Locked(Контекст());' |
 
 @OnServer
-Сценарий: HttpServicePostUpdate200Ok
+Сценарий: HttpServicePostUpload200Ok
 	И я выполняю код встроенного языка на сервере
-	| 'ТестыHTTPСервисыСервер.HttpServicePostUpdate200Ok(Контекст());' |
+	| 'ТестыHTTPСервисыСервер.HttpServicePostUpload200Ok(Контекст());' |
 
 @OnServer
 Сценарий: HttpServicePostSwitch200Enabled

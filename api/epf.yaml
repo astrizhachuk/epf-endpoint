@@ -6,7 +6,7 @@ info:
     email: a.strizhachuk@yandex.ru
   version: 1.0.0
 servers:
-- url: http://localhost/receiver/hs/gitlab
+- url: http://localhost/receiver/hs/epf
   description: Develop
 paths:
   /version:
@@ -32,7 +32,7 @@ paths:
       summary: Включить/отключить функционал загрузки внешнего отчета или обработки
       operationId: switch
       parameters:
-      - name: Value
+      - name: value
         in: header
         description: true - включить, false - отключить
         required: true
@@ -74,7 +74,7 @@ paths:
       summary: Обновить внешний отчет или обработку
       operationId: update
       parameters:
-      - name: Name
+      - name: name
         in: header
         description: Полное имя файла (с расширением)
         required: true
@@ -132,5 +132,5 @@ components:
   securitySchemes:
     access_token_receiver:
       type: apiKey
-      name: Token
+      name: token
       in: header

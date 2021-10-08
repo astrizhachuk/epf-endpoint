@@ -4,21 +4,14 @@
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
-		<name>HTTPService.gitlab.URLTemplate.version.Method.GET</name>
+		<name>HTTPService.ExternalDataProcessors.URLTemplate.Upload.Method.POST</name>
 		<right>
 			<name>Use</name>
 			<value>true</value>
 		</right>
 	</object>
 	<object>
-		<name>HTTPService.gitlab.URLTemplate.update.Method.POST</name>
-		<right>
-			<name>Use</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>HTTPService.gitlab.URLTemplate.switch.Method.POST</name>
+		<name>HTTPService.ExternalDataProcessors.URLTemplate.Switch.Method.POST</name>
 		<right>
 			<name>Use</name>
 			<value>true</value>
@@ -44,7 +37,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Constant.AccessTokenВнешнееХранилищеОтчетовИОбработок</name>
+		<name>Constant.ТокенДоступаЗагрузкиФайловИзВнешнегоХранилища</name>
 		<right>
 			<name>Update</name>
 			<value>true</value>

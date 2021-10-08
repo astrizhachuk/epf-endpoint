@@ -1,38 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9c9254e0-8f88-4842-a2f3-7a1d8fc298b5">
-  <name>gitlab</name>
+  <name>ExternalDataProcessors</name>
   <synonym>
     <key>ru</key>
-    <value>gitlab services</value>
+    <value>External Data Processors</value>
   </synonym>
-  <rootURL>gitlab</rootURL>
+  <rootURL>epf</rootURL>
   <reuseSessions>AutoUse</reuseSessions>
   <sessionMaxAge>20</sessionMaxAge>
-  <urlTemplates uuid="94220ba7-437d-4875-885f-8444a50e3bb8">
-    <name>version</name>
-    <synonym>
-      <key>ru</key>
-      <value>version</value>
-    </synonym>
-    <comment>Версия конфигурации</comment>
-    <template>/version</template>
-    <methods uuid="5a483fe5-79c6-43e7-ba13-527277b5c722">
-      <name>GET</name>
-      <synonym>
-        <key>ru</key>
-        <value>GET</value>
-      </synonym>
-      <handler>VersionGET</handler>
-    </methods>
-  </urlTemplates>
   <urlTemplates uuid="78126d2b-ff15-4029-ab0c-ee64c4bcba0c">
-    <name>update</name>
+    <name>Upload</name>
     <synonym>
       <key>ru</key>
-      <value>update</value>
+      <value>Upload</value>
     </synonym>
-    <comment>Обновить файл</comment>
-    <template>/update</template>
+    <comment>Загрузить файл в информационную базу</comment>
+    <template>/upload</template>
     <methods uuid="04de60dd-5afb-47cd-9ae0-2097a87ea15b">
       <name>POST</name>
       <synonym>
@@ -40,14 +23,14 @@
         <value>POST</value>
       </synonym>
       <httpMethod>POST</httpMethod>
-      <handler>UpdatePOST</handler>
+      <handler>PostUpload</handler>
     </methods>
   </urlTemplates>
   <urlTemplates uuid="0a5bb309-8e37-411c-8c98-c222318faa66">
-    <name>switch</name>
+    <name>Switch</name>
     <synonym>
       <key>ru</key>
-      <value>switch</value>
+      <value>Switch</value>
     </synonym>
     <comment>Включение/отключение загрузки из внешних хранилищ</comment>
     <template>/switch</template>
@@ -58,7 +41,7 @@
         <value>POST</value>
       </synonym>
       <httpMethod>POST</httpMethod>
-      <handler>switchPOST</handler>
+      <handler>PostSwitch</handler>
     </methods>
   </urlTemplates>
 </mdclass:HTTPService>
