@@ -2,7 +2,7 @@
 
 См. [gitlab-services](https://github.com/astrizhachuk/gitlab-services)
 
-Пример реализации http-сервиса обновления внешний отчетов и обработок в базе-получателе (глубоко модифицированная УТ 10.3).
+Пример реализации http-сервиса по работе с внешними отчетами и обработками в информационной базе (справочник "Внешние обработки" взят из УТ 10.3).
 
 Описание api [тут](./api/epf.yaml) или [тут](https://app.swaggerhub.com/apis-docs/astrizhachuk/gitlab-services-receiver/1.0.0)
 
