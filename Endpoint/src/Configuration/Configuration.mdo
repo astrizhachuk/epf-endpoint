@@ -32,6 +32,7 @@
   <commonModules>CommonModule.ВнешниеОтчетыИОбработкиКлиентСервер</commonModules>
   <commonModules>CommonModule.КодыСостоянияHTTPКлиентСерверПовтИсп</commonModules>
   <commonModules>CommonModule.ОбщегоНазначения</commonModules>
+  <commonModules>CommonModule.HTTPServices</commonModules>
   <httpServices>HTTPService.ExternalDataProcessors</httpServices>
   <httpServices>HTTPService.Infobase</httpServices>
   <constants>Constant.ТокенДоступаЗагрузкиФайловИзВнешнегоХранилища</constants>
