@@ -4,7 +4,7 @@
 
 Пример реализации http-сервиса по работе с внешними отчетами и обработками в информационной базе (справочник "Внешние обработки" взят из УТ 10.3).
 
-Описание api [тут](./api/epf-endpoint.yaml) или [тут](https://app.swaggerhub.com/apis/astrizhachuk/epf-endpoint/2.0.0)
+Описание api [тут](./api/epf-endpoint.yaml) или [тут](https://app.swaggerhub.com/apis/astrizhachuk/epf-endpoint/2.0.0).
 
 ## Инструменты
 
