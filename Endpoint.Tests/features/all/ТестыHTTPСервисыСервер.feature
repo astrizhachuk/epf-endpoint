@@ -9,61 +9,96 @@
 	Чтобы я мог гарантировать работоспособность метода
 
 @OnServer
-Сценарий: HttpServiceGetInfobase
+Сценарий: FindByFilenameGet400BadRequest
 	И я выполняю код встроенного языка на сервере
-	| 'ТестыHTTPСервисыСервер.HttpServiceGetInfobase(Контекст());' |
+	| 'ТестыHTTPСервисыСервер.FindByFilenameGet400BadRequest(Контекст());' |
 
 @OnServer
-Сценарий: HttpServicePostUploadError400BadRequest
+Сценарий: FindByFilenameGet404NotFound
 	И я выполняю код встроенного языка на сервере
-	| 'ТестыHTTPСервисыСервер.HttpServicePostUploadError400BadRequest(Контекст());' |
+	| 'ТестыHTTPСервисыСервер.FindByFilenameGet404NotFound(Контекст());' |
 
 @OnServer
-Сценарий: HttpServicePostSwitchError400BadRequestEmptyValue
+Сценарий: FindByFilenameGet200Ok
 	И я выполняю код встроенного языка на сервере
-	| 'ТестыHTTPСервисыСервер.HttpServicePostSwitchError400BadRequestEmptyValue(Контекст());' |
+	| 'ТестыHTTPСервисыСервер.FindByFilenameGet200Ok(Контекст());' |
 
 @OnServer
-Сценарий: HttpServicePostSwitchError400BadRequestBadValue
+Сценарий: FindByGUIDGet404NotFound
 	И я выполняю код встроенного языка на сервере
-	| 'ТестыHTTPСервисыСервер.HttpServicePostSwitchError400BadRequestBadValue(Контекст());' |
+	| 'ТестыHTTPСервисыСервер.FindByGUIDGet404NotFound(Контекст());' |
 
 @OnServer
-Сценарий: HttpServicePostUploadError401Unauthorized
+Сценарий: FindByGUIDGet500BadGUID
 	И я выполняю код встроенного языка на сервере
-	| 'ТестыHTTPСервисыСервер.HttpServicePostUploadError401Unauthorized(Контекст());' |
+	| 'ТестыHTTPСервисыСервер.FindByGUIDGet500BadGUID(Контекст());' |
 
 @OnServer
-Сценарий: HttpServicePostSwitchError401Unauthorized
+Сценарий: FindByGUIDGet200Ok
 	И я выполняю код встроенного языка на сервере
-	| 'ТестыHTTPСервисыСервер.HttpServicePostSwitchError401Unauthorized(Контекст());' |
+	| 'ТестыHTTPСервисыСервер.FindByGUIDGet200Ok(Контекст());' |
 
 @OnServer
-Сценарий: HttpServicePostUploadError403Forbidden
+Сценарий: InfobaseGet200Ok
 	И я выполняю код встроенного языка на сервере
-	| 'ТестыHTTPСервисыСервер.HttpServicePostUploadError403Forbidden(Контекст());' |
+	| 'ТестыHTTPСервисыСервер.InfobaseGet200Ok(Контекст());' |
 
 @OnServer
-Сценарий: HttpServicePostSwitchError403Forbidden
+Сценарий: UploadFilePost400BadRequest
 	И я выполняю код встроенного языка на сервере
-	| 'ТестыHTTPСервисыСервер.HttpServicePostSwitchError403Forbidden(Контекст());' |
+	| 'ТестыHTTPСервисыСервер.UploadFilePost400BadRequest(Контекст());' |
 
 @OnServer
-Сценарий: HttpServicePostUploadError423Locked
+Сценарий: SwitchPost400BadRequestEmptyValue
 	И я выполняю код встроенного языка на сервере
-	| 'ТестыHTTPСервисыСервер.HttpServicePostUploadError423Locked(Контекст());' |
+	| 'ТестыHTTPСервисыСервер.SwitchPost400BadRequestEmptyValue(Контекст());' |
 
 @OnServer
-Сценарий: HttpServicePostUpload200Ok
+Сценарий: SwitchPost400BadRequestBadValue
 	И я выполняю код встроенного языка на сервере
-	| 'ТестыHTTPСервисыСервер.HttpServicePostUpload200Ok(Контекст());' |
+	| 'ТестыHTTPСервисыСервер.SwitchPost400BadRequestBadValue(Контекст());' |
 
 @OnServer
-Сценарий: HttpServicePostSwitch200Enabled
+Сценарий: UploadFilePost401Unauthorized
 	И я выполняю код встроенного языка на сервере
-	| 'ТестыHTTPСервисыСервер.HttpServicePostSwitch200Enabled(Контекст());' |
+	| 'ТестыHTTPСервисыСервер.UploadFilePost401Unauthorized(Контекст());' |
 
 @OnServer
-Сценарий: HttpServicePostSwitch200Disabled
+Сценарий: SwitchPost401Unauthorized
 	И я выполняю код встроенного языка на сервере
-	| 'ТестыHTTPСервисыСервер.HttpServicePostSwitch200Disabled(Контекст());' |
+	| 'ТестыHTTPСервисыСервер.SwitchPost401Unauthorized(Контекст());' |
+
+@OnServer
+Сценарий: UploadFilePost403Forbidden
+	И я выполняю код встроенного языка на сервере
+	| 'ТестыHTTPСервисыСервер.UploadFilePost403Forbidden(Контекст());' |
+
+@OnServer
+Сценарий: SwitchPost403Forbidden
+	И я выполняю код встроенного языка на сервере
+	| 'ТестыHTTPСервисыСервер.SwitchPost403Forbidden(Контекст());' |
+
+@OnServer
+Сценарий: UploadFilePost423Locked
+	И я выполняю код встроенного языка на сервере
+	| 'ТестыHTTPСервисыСервер.UploadFilePost423Locked(Контекст());' |
+
+@OnServer
+Сценарий: UploadFilePost404NotFound
+	И я выполняю код встроенного языка на сервере
+	| 'ТестыHTTPСервисыСервер.UploadFilePost404NotFound(Контекст());' |
+
+@OnServer
+Сценарий: UploadFilePost200Ok
+	И я выполняю код встроенного языка на сервере
+	| 'ТестыHTTPСервисыСервер.UploadFilePost200Ok(Контекст());' |
+
+@OnServer
+Сценарий: SwitchPost200Enabled
+	И я выполняю код встроенного языка на сервере
+	| 'ТестыHTTPСервисыСервер.SwitchPost200Enabled(Контекст());' |
+
+@OnServer
+Сценарий: SwitchPost200Disabled
+	И я выполняю код встроенного языка на сервере
+	| 'ТестыHTTPСервисыСервер.SwitchPost200Disabled(Контекст());' |

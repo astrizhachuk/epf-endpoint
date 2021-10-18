@@ -17,12 +17,12 @@
     </synonym>
     <template>/*</template>
     <methods uuid="c87bc6ad-eba0-4768-9092-fd26e32345df">
-      <name>GET</name>
+      <name>Get</name>
       <synonym>
         <key>ru</key>
-        <value>GET</value>
+        <value>Get</value>
       </synonym>
-      <handler>GetInfobase</handler>
+      <handler>InfobaseGet</handler>
     </methods>
   </urlTemplates>
 </mdclass:HTTPService>

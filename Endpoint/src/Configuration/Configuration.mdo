@@ -28,6 +28,8 @@
   <subsystems>Subsystem.ВнешниеОтчетыИОбработки</subsystems>
   <roles>Role.ПолныеПрава</roles>
   <roles>Role.ЗагрузкаВнешнихОбработок</roles>
+  <roles>Role.ПросмотрВнешнихОбработок</roles>
+  <roles>Role.ПросмотрСведенийОбИнформационнойБазе</roles>
   <commonModules>CommonModule.ВнешниеОтчетыИОбработки</commonModules>
   <commonModules>CommonModule.ВнешниеОтчетыИОбработкиКлиентСервер</commonModules>
   <commonModules>CommonModule.КодыСостоянияHTTPКлиентСерверПовтИсп</commonModules>

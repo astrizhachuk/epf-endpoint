@@ -4,14 +4,14 @@
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
-		<name>HTTPService.ExternalDataProcessors.URLTemplate.Upload.Method.POST</name>
+		<name>HTTPService.ExternalDataProcessors.URLTemplate.UploadFile.Method.Post</name>
 		<right>
 			<name>Use</name>
 			<value>true</value>
 		</right>
 	</object>
 	<object>
-		<name>HTTPService.ExternalDataProcessors.URLTemplate.Switch.Method.POST</name>
+		<name>HTTPService.ExternalDataProcessors.URLTemplate.Switch.Method.Post</name>
 		<right>
 			<name>Use</name>
 			<value>true</value>

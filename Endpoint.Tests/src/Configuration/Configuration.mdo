@@ -30,7 +30,7 @@
   <usePurposes>PersonalComputer</usePurposes>
   <scriptVariant>Russian</scriptVariant>
   <vendor></vendor>
-  <version>0.0.1</version>
+  <version>2.0.0</version>
   <updateCatalogAddress>http://downloads.v8.1c.ru/tmplts/</updateCatalogAddress>
   <includeHelpInContents>true</includeHelpInContents>
   <useManagedFormInOrdinaryApplication>true</useManagedFormInOrdinaryApplication>
@@ -54,4 +54,6 @@
   <commonModules>CommonModule.ТестыHTTPСервисыСервер</commonModules>
   <commonModules>CommonModule.ТестыВнешниеОтчетыИОбработкиСервер</commonModules>
   <commonModules>CommonModule.HTTPConnector</commonModules>
+  <commonModules>CommonModule.TestsHTTPServicesServer</commonModules>
+  <commonModules>CommonModule.ТестыПодготовкаДанных</commonModules>
 </mdclass:Configuration>

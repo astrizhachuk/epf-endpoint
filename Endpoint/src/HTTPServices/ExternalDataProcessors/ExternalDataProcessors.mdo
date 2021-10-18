@@ -9,21 +9,21 @@
   <reuseSessions>AutoUse</reuseSessions>
   <sessionMaxAge>20</sessionMaxAge>
   <urlTemplates uuid="78126d2b-ff15-4029-ab0c-ee64c4bcba0c">
-    <name>Upload</name>
+    <name>UploadFile</name>
     <synonym>
       <key>ru</key>
-      <value>Upload</value>
+      <value>Upload file</value>
     </synonym>
     <comment>Загрузить файл в информационную базу</comment>
-    <template>/upload</template>
+    <template>/uploadFile</template>
     <methods uuid="04de60dd-5afb-47cd-9ae0-2097a87ea15b">
-      <name>POST</name>
+      <name>Post</name>
       <synonym>
         <key>ru</key>
-        <value>POST</value>
+        <value>Post</value>
       </synonym>
       <httpMethod>POST</httpMethod>
-      <handler>PostUpload</handler>
+      <handler>UploadFilePost</handler>
     </methods>
   </urlTemplates>
   <urlTemplates uuid="0a5bb309-8e37-411c-8c98-c222318faa66">
@@ -35,13 +35,46 @@
     <comment>Включение/отключение загрузки из внешних хранилищ</comment>
     <template>/switch</template>
     <methods uuid="404c22a5-8969-45ee-a802-64a3ee053c16">
-      <name>POST</name>
+      <name>Post</name>
       <synonym>
         <key>ru</key>
-        <value>POST</value>
+        <value>Post</value>
       </synonym>
       <httpMethod>POST</httpMethod>
-      <handler>PostSwitch</handler>
+      <handler>SwitchPost</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="56337511-f32e-40da-88a6-fa2d3e5960cd">
+    <name>FindByGUID</name>
+    <synonym>
+      <key>ru</key>
+      <value>Find by GUID</value>
+    </synonym>
+    <comment>Найти внешюю обработку по GUID ссылки</comment>
+    <template>/{GUID}</template>
+    <methods uuid="1668fa8c-25a6-47d8-bc23-d55d9ac4233d">
+      <name>Get</name>
+      <synonym>
+        <key>ru</key>
+        <value>Get</value>
+      </synonym>
+      <handler>FindByGUIDGet</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="bf11a127-adc9-4792-9b9b-eee8195ab3b3">
+    <name>FindByFilename</name>
+    <synonym>
+      <key>ru</key>
+      <value>Find by filename</value>
+    </synonym>
+    <template>/findByFilename</template>
+    <methods uuid="4abc4804-bd26-4684-8a40-db9c3950165c">
+      <name>Get</name>
+      <synonym>
+        <key>ru</key>
+        <value>Get</value>
+      </synonym>
+      <handler>FindByFilenameGet</handler>
     </methods>
   </urlTemplates>
 </mdclass:HTTPService>

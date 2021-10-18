@@ -1,6 +1,22 @@
 GET  http://localhost/test/hs/infobase
 
 ###
+GET  http://localhost/test/hs/epf/e4a72cf1-2a6a-11ec-a4c9-dcfb4832a874
+#GET  http://localhost/test/hs/epf/3fa85f64-5717-4562-b3fc-2c963f66afa6
+
+###
+GET  http://localhost/test/hs/epf/00000000-0000-0000-0000-000000000000
+
+###
+GET  http://localhost/test/hs/epf/00000000-bad
+
+###
+GET  http://localhost/test/hs/epf/findByFilename?query=%D0%AD%D1%82%D0%BE%D0%9E%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B02.epf
+
+###
+GET  http://localhost/test/hs/epf/findByFilename?query=ЭтоОбработка2.epf
+
+###
 # bad headers
 POST  http://localhost/test/hs/epf/switch
 token: token
@@ -18,8 +34,10 @@ token: token
 value: off
 ###
 
-POST  http://localhost/test/hs/epf/upload
+PUT  http://localhost/test/hs/epf/uploadFile
 token: token
 name: %D0%AD%D1%82%D0%BE%D0%9E%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B02.epf
+
+###
 
 

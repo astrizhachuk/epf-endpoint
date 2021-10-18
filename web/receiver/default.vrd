@@ -2,11 +2,9 @@
 <point xmlns="http://v8.1c.ru/8.2/virtual-resource-system" 
 		xmlns:xs="http://www.w3.org/2001/XMLSchema" 
 		xmlns:core="http://v8.1c.ru/8.1/data/core" 
-		base="/receiver" 
-		ib="Srvr=&quot;localhost&quot;;Ref=&quot;gitlabServicesReceiver&quot;;usr=&quot;gitlab&quot;;pwd=&quot;gitlab&quot;" 
-		enable="false" 
-		enableStandardOData="true" 
-		temp="C:\w\1c\tmp">
+		base="/" 
+		ib="Srvr=localhost;Ref=epf-endpoint;usr=ExternalDataProcessors;pwd=ExternalDataProcessors"
+		enable="false">
 	<debug enable="true" 
 			protocol="http" 
 			url="http://localhost:1550"/>
@@ -16,8 +14,15 @@
 	</ws>
 	<httpServices publishByDefault="true" 
 			publishExtensionsByDefault="true">
-		<service name="gitlab" 
-				rootUrl="gitlab" 
+		<service name="ExternalDataProcessors" 
+				rootUrl="epf" 
+				enable="true" 
+				reuseSessions="dontuse" 
+				sessionMaxAge="20" 
+				poolSize="10" 
+				poolTimeout="5"/>
+		<service name="Infobase" 
+				rootUrl="infobase" 
 				enable="true" 
 				reuseSessions="dontuse" 
 				sessionMaxAge="20" 

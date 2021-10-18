@@ -12,4 +12,7 @@
   <content>HTTPService.ExternalDataProcessors</content>
   <content>Catalog.ВнешниеОбработки</content>
   <content>Role.ЗагрузкаВнешнихОбработок</content>
+  <content>Role.ПросмотрВнешнихОбработок</content>
+  <content>HTTPService.Infobase</content>
+  <content>Role.ПросмотрСведенийОбИнформационнойБазе</content>
 </mdclass:Subsystem>
