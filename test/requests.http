@@ -28,10 +28,10 @@ token: token
 value: on
 
 ###
-
 POST  http://localhost/test/hs/epf/switch
 token: token
 value: off
+
 ###
 
 PUT  http://localhost/test/hs/epf/uploadFile
@@ -40,4 +40,7 @@ name: %D0%AD%D1%82%D0%BE%D0%9E%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B02.
 
 ###
 
-
+###
+POST  http://localhost/test/hs/epf/setToken
+token: token
+value: new token

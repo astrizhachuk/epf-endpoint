@@ -4,7 +4,7 @@ info:
   description: 'Управление внешними отчетами и обработками через HTTP сервис (REST).'
   contact:
     email: a.strizhachuk@yandex.ru
-  version: 2.0.0
+  version: 2.1.0
 servers:
 - url: http://localhost/test/hs
   description: develop
@@ -32,7 +32,7 @@ paths:
                     "config_version": "1.0.0",
                     "connection_string": "File=\"\/1c\/db\/epf-endpoint\";"
                   }
-  /epf/{GUID}:
+  /epf/{guid}:
     get:
       tags:
       - epf
@@ -124,10 +124,7 @@ paths:
           content:
             application/json:
               schema:
-                type: object
-                properties:
-                  message:
-                    type: string
+                $ref: '#/components/schemas/message'
               examples:
                 enabled:
                   summary: Включено
@@ -214,8 +211,50 @@ paths:
           content: {}
       security:
       - access_token_receiver: []
+  /epf/setToken:
+    post:
+      tags:
+      - epf
+      summary: Установка токена
+      description: Установка токена в информационной базе для операций, требующих авторизацию
+      operationId: setToken
+      parameters:
+      - name: value
+        in: header
+        required: true
+        schema:
+          type: string
+      requestBody:
+        content: {}
+        required: false
+      responses:
+        200:
+          description: Результат операции
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/message'
+              examples:
+                set:
+                  summary: Установлен
+                  value: {
+                    "message": "установлен новый токен"
+                  }
+        400:
+          description: Ошибочный запрос
+          content: {}
+        401:
+          description: Не авторизован
+          content: {}
+      security:
+      - access_token_receiver: []
 components:
   schemas:
+    message:
+      type: object
+      properties:
+        message:
+          type: string
     details:
       type: object
       properties:

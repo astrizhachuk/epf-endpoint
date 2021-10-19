@@ -15,4 +15,5 @@
   <content>Role.ПросмотрВнешнихОбработок</content>
   <content>HTTPService.Infobase</content>
   <content>Role.ПросмотрСведенийОбИнформационнойБазе</content>
+  <content>Role.АдминистрированиеЗагрузкиВнешнихОбработок</content>
 </mdclass:Subsystem>

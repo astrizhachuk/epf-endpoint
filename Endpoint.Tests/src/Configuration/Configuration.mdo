@@ -30,7 +30,7 @@
   <usePurposes>PersonalComputer</usePurposes>
   <scriptVariant>Russian</scriptVariant>
   <vendor></vendor>
-  <version>2.0.0</version>
+  <version>2.1.0</version>
   <updateCatalogAddress>http://downloads.v8.1c.ru/tmplts/</updateCatalogAddress>
   <includeHelpInContents>true</includeHelpInContents>
   <useManagedFormInOrdinaryApplication>true</useManagedFormInOrdinaryApplication>
