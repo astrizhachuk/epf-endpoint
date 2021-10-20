@@ -4,7 +4,7 @@
 
 Пример реализации http-сервиса по работе с внешними отчетами и обработками в информационной базе (справочник "Внешние обработки" взят из УТ 10.3).
 
-Описание api [тут](./api/epf-endpoint.yaml) или [тут](https://app.swaggerhub.com/apis/astrizhachuk/epf-endpoint/2.1.0).
+Описание api [тут](./api/epf-endpoint.yaml) или [тут](https://app.swaggerhub.com/apis/astrizhachuk/epf-endpoint/2.2.0).
 
 Имплементация api - в сервисах `Infobase` и `ExternalDataProcessors`. Общий модуль `ВнешниеОтчетыИОбработки` - адаптер между api сервисов и информационной базой. Справочник "ВнешниеОбработки" - конкретная реализация интерфейса.
 
