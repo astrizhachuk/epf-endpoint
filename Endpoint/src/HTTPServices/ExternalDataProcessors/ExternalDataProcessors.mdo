@@ -95,4 +95,21 @@
       <handler>SetTokenPost</handler>
     </methods>
   </urlTemplates>
+  <urlTemplates uuid="ebeb71ff-0825-4b8e-8ab0-dc5ea4d31655">
+    <name>Status</name>
+    <synonym>
+      <key>ru</key>
+      <value>Status</value>
+    </synonym>
+    <comment>Текущий статус функционала загрузки файлов</comment>
+    <template>/status</template>
+    <methods uuid="875f1c8c-a05c-41ad-be43-7ada28ef5d3e">
+      <name>Get</name>
+      <synonym>
+        <key>ru</key>
+        <value>Get</value>
+      </synonym>
+      <handler>StatusGet</handler>
+    </methods>
+  </urlTemplates>
 </mdclass:HTTPService>

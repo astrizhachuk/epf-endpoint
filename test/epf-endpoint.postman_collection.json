@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "bdbb51d9-e270-4e51-83c8-8f78eafd8b46",
+		"_postman_id": "df9064dc-453f-4d47-b336-0ba96cb92287",
 		"name": "Внешние обработки (endpoint)",
 		"description": "Управление внешними отчетами и обработками через HTTP сервис (REST).\n\nContact Support:\n Email: a.strizhachuk@yandex.ru",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
@@ -9,6 +9,81 @@
 		{
 			"name": "epf",
 			"item": [
+				{
+					"name": "Текущий статус функционала загрузки файлов",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Response is ok\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var jsonData = pm.response.json();\r",
+									"\r",
+									"var schema = {\r",
+									"    \"type\": \"object\",\r",
+									"    \"properties\": {\r",
+									"        \"message\": { \"type\": \"string\" }\r",
+									"    },\r",
+									"    \"additionalProperties\": false\r",
+									"};\r",
+									"\r",
+									"pm.test('Schema is valid', function () {\r",
+									"    pm.expect(tv4.validate(jsonData, schema)).to.be.true;\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/epf/status",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"epf",
+								"status"
+							]
+						},
+						"description": "Показывает текущий статус функционала загрузки файлов внешних обработок"
+					},
+					"response": [
+						{
+							"name": "Текущий статус загрузки",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/epf/status",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"epf",
+										"status"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"message\": \"загрузка файлов включена\"\n}"
+						}
+					]
+				},
 				{
 					"name": "Найти внешнюю обработку по GUID",
 					"event": [

@@ -4,7 +4,7 @@ info:
   description: 'Управление внешними отчетами и обработками через HTTP сервис (REST).'
   contact:
     email: a.strizhachuk@yandex.ru
-  version: 2.1.0
+  version: 2.2.0
 servers:
 - url: http://localhost/test/hs
   description: develop
@@ -26,11 +26,36 @@ paths:
                   connection_string:
                     type: string
               examples:
-                foo:
+                info:
                   summary: Текущие сведения
                   value: {
                     "config_version": "1.0.0",
                     "connection_string": "File=\"\/1c\/db\/epf-endpoint\";"
+                  }
+  /epf/status:
+    get:
+      tags:
+      - epf
+      summary: Текущий статус функционала загрузки файлов
+      description: Показывает текущий статус функционала загрузки файлов внешних обработок
+      operationId: status
+      responses:
+        200:
+          description: Текущий статус загрузки
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/message'
+              examples:
+                enabled:
+                  summary: Включено
+                  value: {
+                    "message": "загрузка файлов включена"
+                  }
+                disabled:
+                  summary: Отключено
+                  value: {
+                    "message": "загрузка файлов отключена"
                   }
   /epf/{guid}:
     get:

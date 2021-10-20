@@ -9,6 +9,16 @@
 	Чтобы я мог гарантировать работоспособность метода
 
 @OnServer
+Сценарий: InfobaseGet200Ok
+	И я выполняю код встроенного языка на сервере
+	| 'ТестыHTTPСервисыСервер.InfobaseGet200Ok(Контекст());' |
+
+@OnServer
+Сценарий: StatusGet200Ok
+	И я выполняю код встроенного языка на сервере
+	| 'ТестыHTTPСервисыСервер.StatusGet200Ok(Контекст());' |
+
+@OnServer
 Сценарий: FindByGUIDGet404NotFound
 	И я выполняю код встроенного языка на сервере
 	| 'ТестыHTTPСервисыСервер.FindByGUIDGet404NotFound(Контекст());' |
@@ -37,11 +47,6 @@
 Сценарий: FindByFilenameGet200Ok
 	И я выполняю код встроенного языка на сервере
 	| 'ТестыHTTPСервисыСервер.FindByFilenameGet200Ok(Контекст());' |
-
-@OnServer
-Сценарий: InfobaseGet200Ok
-	И я выполняю код встроенного языка на сервере
-	| 'ТестыHTTPСервисыСервер.InfobaseGet200Ok(Контекст());' |
 
 @OnServer
 Сценарий: SwitchPost400BadRequestMissingValue
