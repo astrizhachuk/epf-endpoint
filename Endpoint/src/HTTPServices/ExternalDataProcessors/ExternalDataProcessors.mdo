@@ -77,24 +77,6 @@
       <handler>FindByFilenameGet</handler>
     </methods>
   </urlTemplates>
-  <urlTemplates uuid="48613045-f41c-40ad-b9c3-93b90dd7e5d6">
-    <name>SetToken</name>
-    <synonym>
-      <key>ru</key>
-      <value>Set token</value>
-    </synonym>
-    <comment>Установка токена в информационной базе для операций, требующих авторизацию</comment>
-    <template>/setToken</template>
-    <methods uuid="92f394b1-7caf-4002-b1c6-1eb97dfb15ed">
-      <name>Post</name>
-      <synonym>
-        <key>ru</key>
-        <value>Post</value>
-      </synonym>
-      <httpMethod>POST</httpMethod>
-      <handler>SetTokenPost</handler>
-    </methods>
-  </urlTemplates>
   <urlTemplates uuid="ebeb71ff-0825-4b8e-8ab0-dc5ea4d31655">
     <name>Status</name>
     <synonym>

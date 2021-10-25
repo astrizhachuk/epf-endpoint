@@ -8,12 +8,10 @@
   <includeHelpInContents>true</includeHelpInContents>
   <content>Constant.ЗагружатьФайлыИзВнешнегоХранилища</content>
   <content>CommonModule.ВнешниеОтчетыИОбработки</content>
-  <content>Constant.ТокенДоступаЗагрузкиФайловИзВнешнегоХранилища</content>
   <content>HTTPService.ExternalDataProcessors</content>
   <content>Catalog.ВнешниеОбработки</content>
   <content>Role.ЗагрузкаВнешнихОбработок</content>
   <content>Role.ПросмотрВнешнихОбработок</content>
   <content>HTTPService.Infobase</content>
   <content>Role.ПросмотрСведенийОбИнформационнойБазе</content>
-  <content>Role.АдминистрированиеЗагрузкиВнешнихОбработок</content>
 </mdclass:Subsystem>

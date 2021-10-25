@@ -37,21 +37,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Constant.ТокенДоступаЗагрузкиФайловИзВнешнегоХранилища</name>
-		<right>
-			<name>Update</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>Constant.ЗагружатьФайлыИзВнешнегоХранилища</name>
 		<right>
 			<name>Update</name>

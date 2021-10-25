@@ -3,7 +3,7 @@
 		xmlns:xs="http://www.w3.org/2001/XMLSchema" 
 		xmlns:core="http://v8.1c.ru/8.1/data/core" 
 		base="/" 
-		ib="Srvr=localhost;Ref=epf-endpoint;usr=ExternalDataProcessors;pwd=ExternalDataProcessors"
+		ib="Srvr=localhost;Ref=epf-endpoint"
 		enable="false">
 	<debug enable="true" 
 			protocol="http" 

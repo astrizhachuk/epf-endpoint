@@ -11,7 +11,7 @@
   <defaultRunMode>OrdinaryApplication</defaultRunMode>
   <usePurposes>PersonalComputer</usePurposes>
   <scriptVariant>Russian</scriptVariant>
-  <version>0.0.1</version>
+  <version>2.3.0</version>
   <defaultLanguage>Language.Русский</defaultLanguage>
   <dataLockControlMode>Managed</dataLockControlMode>
   <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
@@ -30,7 +30,6 @@
   <roles>Role.ЗагрузкаВнешнихОбработок</roles>
   <roles>Role.ПросмотрВнешнихОбработок</roles>
   <roles>Role.ПросмотрСведенийОбИнформационнойБазе</roles>
-  <roles>Role.АдминистрированиеЗагрузкиВнешнихОбработок</roles>
   <commonModules>CommonModule.ВнешниеОтчетыИОбработки</commonModules>
   <commonModules>CommonModule.ВнешниеОтчетыИОбработкиКлиентСервер</commonModules>
   <commonModules>CommonModule.КодыСостоянияHTTPКлиентСерверПовтИсп</commonModules>
@@ -38,7 +37,6 @@
   <commonModules>CommonModule.HTTPServices</commonModules>
   <httpServices>HTTPService.ExternalDataProcessors</httpServices>
   <httpServices>HTTPService.Infobase</httpServices>
-  <constants>Constant.ТокенДоступаЗагрузкиФайловИзВнешнегоХранилища</constants>
   <constants>Constant.ЗагружатьФайлыИзВнешнегоХранилища</constants>
   <catalogs>Catalog.ВнешниеОбработки</catalogs>
   <enums>Enum.ВидыДополнительныхВнешнихОбработок</enums>

@@ -59,16 +59,6 @@
 	| 'ТестыHTTPСервисыСервер.SwitchPost400BadRequestBadValue(Контекст());' |
 
 @OnServer
-Сценарий: SwitchPost401Unauthorized
-	И я выполняю код встроенного языка на сервере
-	| 'ТестыHTTPСервисыСервер.SwitchPost401Unauthorized(Контекст());' |
-
-@OnServer
-Сценарий: SwitchPost403Forbidden
-	И я выполняю код встроенного языка на сервере
-	| 'ТестыHTTPСервисыСервер.SwitchPost403Forbidden(Контекст());' |
-
-@OnServer
 Сценарий: SwitchPost200Enabled
 	И я выполняю код встроенного языка на сервере
 	| 'ТестыHTTPСервисыСервер.SwitchPost200Enabled(Контекст());' |
@@ -79,44 +69,9 @@
 	| 'ТестыHTTPСервисыСервер.SwitchPost200Disabled(Контекст());' |
 
 @OnServer
-Сценарий: SetTokenPost400BadRequestMissingValue
-	И я выполняю код встроенного языка на сервере
-	| 'ТестыHTTPСервисыСервер.SetTokenPost400BadRequestMissingValue(Контекст());' |
-
-@OnServer
-Сценарий: SetTokenPost400BadRequestEmptyValue
-	И я выполняю код встроенного языка на сервере
-	| 'ТестыHTTPСервисыСервер.SetTokenPost400BadRequestEmptyValue(Контекст());' |
-
-@OnServer
-Сценарий: SetTokenPost401Unauthorized
-	И я выполняю код встроенного языка на сервере
-	| 'ТестыHTTPСервисыСервер.SetTokenPost401Unauthorized(Контекст());' |
-
-@OnServer
-Сценарий: SetTokenPost200OkInitToken
-	И я выполняю код встроенного языка на сервере
-	| 'ТестыHTTPСервисыСервер.SetTokenPost200OkInitToken(Контекст());' |
-
-@OnServer
-Сценарий: SetTokenPost200OkChange
-	И я выполняю код встроенного языка на сервере
-	| 'ТестыHTTPСервисыСервер.SetTokenPost200OkChange(Контекст());' |
-
-@OnServer
 Сценарий: UploadFilePost400BadRequest
 	И я выполняю код встроенного языка на сервере
 	| 'ТестыHTTPСервисыСервер.UploadFilePost400BadRequest(Контекст());' |
-
-@OnServer
-Сценарий: UploadFilePost401Unauthorized
-	И я выполняю код встроенного языка на сервере
-	| 'ТестыHTTPСервисыСервер.UploadFilePost401Unauthorized(Контекст());' |
-
-@OnServer
-Сценарий: UploadFilePost403Forbidden
-	И я выполняю код встроенного языка на сервере
-	| 'ТестыHTTPСервисыСервер.UploadFilePost403Forbidden(Контекст());' |
 
 @OnServer
 Сценарий: UploadFilePost423Locked
