@@ -169,9 +169,6 @@ paths:
         '400':
           description: Ошибочный запрос
           content: {}
-        '403':
-          description: Доступ закрыт
-          content: {}
   /epf/uploadFile:
     post:
       tags:
